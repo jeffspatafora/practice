@@ -69,3 +69,17 @@ get_ages([{name: "Alice", age: 27}, {name: "Blane", age: 16}])
 
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [2, 4, 8]
+
+def only_even(numbers)
+  even_numbers = numbers.map do |number|
+    number % 2 == 0
+  end
+  p even_numbers
+end
+
+only_even([2, 4, 5, 1, 8, 9, 7])
