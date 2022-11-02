@@ -48,10 +48,31 @@ end
 
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
+shirt = {brand: "shirt", color: "blue", size: "large"}
+
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
+
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
+def to_string(number)
+  return p number.to_s
+end
+
+to_string(1000)
+
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+def five_times(string)
+  5.times do
+    p string
+  end
+end
+
+five_times('hello world')
+
 
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
