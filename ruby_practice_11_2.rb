@@ -76,4 +76,10 @@ five_times('hello world')
 
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
+def average(number1, number2, number3)
+  return (number1 + number2 + number3) / 3
+end
+
+p average(22, 19, 3)
+
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
