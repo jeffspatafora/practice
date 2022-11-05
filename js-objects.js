@@ -17,12 +17,24 @@ getEmail({ firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.co
 // The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 }
 // Write a function that accepts a hash table like this and adds 200 shirts to the "yellow" category. The function can then return the updated hash table.
 
+function clothingInventory(inventory) {
+  inventory.yellow = inventory.yellow + 300;
+  return console.log(inventory);
+}
 
+clothingInventory({ red: 500, blue: 615, green: 484, yellow: 332 });
  
 // #3
 // The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
 // Write a function that accepts 3 parameters: The hash table, a string representing a brand new color, and a number of how many new color shirts there are. The function should then add this color and its number to the hash table, and then return the updated hash table.
- 
+
+function clothingStore(inv, newColor, amount) {
+  inv[newColor] = amount;
+  return console.log(inv);
+}
+
+clothingStore({ red: 500, blue: 615, green: 484, yellow: 332 }, 'black', 220);
+
 // #4
 // The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
 // Write a function that accepts a hash table like this and returns the total number of shirts in inventory.
