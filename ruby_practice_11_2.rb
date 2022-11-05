@@ -39,6 +39,21 @@ end
 
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+def two_numbers(number1, number2)
+  numbers = []
+  numbers << number1
+  numbers << number2
+  i = 0
+  while i < numbers.length
+    p numbers[i]
+    i += 1
+  end
+end
+
+two_numbers(2, 55)
+two_numbers(44, 507)
+two_numbers(46, 78)
+
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
 
@@ -83,3 +98,11 @@ end
 p average(22, 19, 3)
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+def times10_plus30(number)
+  p (number * 10) + 30
+end
+
+times10_plus30(10)
+times10_plus30(22)
+times10_plus30(303)
