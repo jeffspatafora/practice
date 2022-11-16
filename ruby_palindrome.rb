@@ -22,16 +22,19 @@ def palindrome(string)
       is_palindrome = true
       i += 1
     else
+      is_palindrome = false
       break
     end
   end
   p is_palindrome
 end
 
-palindrome('racecar')
-palindrome('tnt')
-palindrome('hello')
-palindrome('yes')
+
+palindrome('noun')
+# palindrome('racecar')
+# palindrome('tnt')
+# palindrome('hello')
+# palindrome('yes')
 
 
 # p "string".reverse
