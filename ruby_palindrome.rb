@@ -8,16 +8,31 @@
 
 def palindrome(string)
   reverse_string = ""
+  is_palindrome = false
   i = 1
   while i <= string.length
     reverse_string << string[-i]
     i += 1
   end
-  # p reverse_string
-
+  p string
+  p reverse_string
+  i = 0
+  while i < string.length
+    if string[i] == reverse_string[i]
+      is_palindrome = true
+      i += 1
+    else
+      break
+    end
+  end
+  p is_palindrome
 end
 
-palindrome('string')
+palindrome('racecar')
+palindrome('tnt')
+palindrome('hello')
+palindrome('yes')
+
 
 # p "string".reverse
 # p "string"[0]
