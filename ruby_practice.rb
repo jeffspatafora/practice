@@ -71,6 +71,12 @@ end
 
 first_not_b(["big", "little", "good", "bad"])
 
+def includes_b(strings)
+  p strings.select {|string| string.downcase.include? 'b'}
+end
+
+includes_b(["big", "little", "good", "bad"])
+
 
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
