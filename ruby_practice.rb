@@ -17,6 +17,18 @@ end
 
 shorter_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
 
+def shorter_than_four(strings)
+  less_than_four = []
+  strings.select do |string|
+    if string.length < 4
+      less_than_four << string
+    end
+  end
+  p less_than_four
+end
+
+shorter_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
+
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
