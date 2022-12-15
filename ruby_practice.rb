@@ -108,3 +108,17 @@ def increased_by_seven(numbers)
 end
 
 increased_by_seven([1, 2, 3])
+
+
+
+# Write a function that accepts an array of strings and returns an array with each string's length.
+# Example:
+# Input: ["hello", "goodbye"]
+# Output: [5, 7]
+
+def string_length(strings)
+  p strings.map {|string| string.length}
+end
+
+string_length(["hello", "goodbye"])
+string_length([''])
