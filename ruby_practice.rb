@@ -122,3 +122,17 @@ end
 
 string_length(["hello", "goodbye"])
 string_length([''])
+
+# Write a function that accepts an array of strings and returns an array with each string's first letter only.
+# Example:
+# Input: ["hello", "goodbye"]
+# Output: ["h", "g"]
+
+def first_letter_only(strings)
+  p strings.map {|string| string[0]}
+end
+
+first_letter_only(["hello", "goodbye"])
+
+first_letter_only(['1'])
+first_letter_only([''])
