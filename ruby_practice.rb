@@ -98,41 +98,103 @@
 # only_odd([2, 4, 5, 1, 8, 9, 7])
 
 
-# Write a function that accepts an array of numbers and returns an array with each number increased by 7.
+# # Write a function that accepts an array of numbers and returns an array with each number increased by 7.
+# # Example:
+# # Input: [1, 2, 3]
+# # Output: [8, 9, 10]
+
+# def increased_by_seven(numbers)
+#   p numbers.map {|number| number + 7}
+# end
+
+# increased_by_seven([1, 2, 3])
+
+
+
+# # Write a function that accepts an array of strings and returns an array with each string's length.
+# # Example:
+# # Input: ["hello", "goodbye"]
+# # Output: [5, 7]
+
+# def string_length(strings)
+#   p strings.map {|string| string.length}
+# end
+
+# string_length(["hello", "goodbye"])
+# string_length([''])
+
+# # Write a function that accepts an array of strings and returns an array with each string's first letter only.
+# # Example:
+# # Input: ["hello", "goodbye"]
+# # Output: ["h", "g"]
+
+# def first_letter_only(strings)
+#   p strings.map {|string| string[0]}
+# end
+
+# first_letter_only(["hello", "goodbye"])
+
+# first_letter_only(['1'])
+# first_letter_only([''])
+
+# Write a function that accepts an array of numbers and returns an array with each number converted into a string.
 # Example:
 # Input: [1, 2, 3]
-# Output: [8, 9, 10]
+# Output: ["1", "2", "3"]
 
-def increased_by_seven(numbers)
-  p numbers.map {|number| number + 7}
+def int_to_str(numbers)
+  p numbers.map {|number| number.to_s}
 end
 
-increased_by_seven([1, 2, 3])
+int_to_str([1, 2, 3])
+int_to_str([0, "0", -1])
 
-
-
-# Write a function that accepts an array of strings and returns an array with each string's length.
+# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
 # Example:
-# Input: ["hello", "goodbye"]
-# Output: [5, 7]
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [2, 4, 8]
 
-def string_length(strings)
-  p strings.map {|string| string.length}
+def only_even(numbers)
+  p numbers.select {|number| number % 2 == 0}
 end
 
-string_length(["hello", "goodbye"])
-string_length([''])
+only_even([2, 4, 5, 1, 8, 9, 7])
+only_even([100, 33, 456, 8, 97, 0])
 
-# Write a function that accepts an array of strings and returns an array with each string's first letter only.
+# Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
 # Example:
-# Input: ["hello", "goodbye"]
-# Output: ["h", "g"]
+# Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
+# Output: ["a", "man", "a", "a"]
 
-def first_letter_only(strings)
-  p strings.map {|string| string[0]}
+
+def only_shorter_than_four(words)
+  p words.select {|word| word.length < 4}
 end
 
-first_letter_only(["hello", "goodbye"])
+only_shorter_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
 
-first_letter_only(['1'])
-first_letter_only([''])
+# Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
+# Example:
+# Input: [8, 23, 0, 44, 1980, 3]
+# Output: [8, 0, 3]
+
+def less_than_ten(numbers)
+  less_than_ten = []
+  numbers.each do |number|
+    if number < 10
+      less_than_ten << number
+    end
+  end
+  p less_than_ten
+end
+
+less_than_ten([8, 23, 0, 44, 1980, 3])
+
+def less_than_ten(numbers)
+  numbers_less_than_ten = numbers.select do |number|
+    number < 10
+  end
+  p numbers_less_than_ten
+end
+
+less_than_ten([8, 23, 0, 44, 1980, 3])
