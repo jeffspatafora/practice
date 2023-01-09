@@ -95,12 +95,46 @@ minumum_number([5, 10, 8, 3, 9])
 minumum_number([8, 22, 0, 4])
 minumum_number([16, 7, 2, -1, 0])
 
+def minumum_number(numbers)
+  p min_num = numbers.reduce(numbers[0]) {|min_num, number|
+    if number < min_num
+      min_num = number
+    else
+      min_num = min_num
+    end
+  }
+end
+
+minumum_number([5, 10, 8, 3, 9])
+minumum_number([8, 22, 0, 4])
+minumum_number([16, 7, 2, -1, 0])
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
 
+def total_string_length(strings)
+  total_length = 0
+  i = 0
+  while i < strings.length
+    total_length = total_length + strings[i].length
+    i += 1
+  end
+  p total_length
+end
+
+total_string_length(["volleyball", "basketball", "badminton"])
+
+def total_string_length(strings)
+  p total_length = strings.reduce(0) {|total, string| total + string.length}
+end
+
+total_string_length(["volleyball", "basketball", "badminton"])
+total_string_length(["volleyball", "basketball", "badminton", "football"])
+
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+
 
 #  7. Start with an array of numbers and compute product of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 1200.
