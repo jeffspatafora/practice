@@ -202,96 +202,72 @@
 
 
 
-# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+# # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
 
 
-array = ["one", "two", "three"]
-p array
-2.times do 
-  array << "word"
-end
-p array
+# array = ["one", "two", "three"]
+# p array
+# 2.times do 
+#   array << "word"
+# end
+# p array
 
-# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+# # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
 
-letters = ["a", "b", "c", "d"]
+# letters = ["a", "b", "c", "d"]
 
-p letters
+# p letters
 
-letters[1] = 0
+# letters[1] = 0
  
-p letters
+# p letters
 
-# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+# # 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-def numbers_arr(num1, num2, num3, num4, num5)
-  numbers = [num1, num2, num3, num4, num5]
-  i = 0
-  while i < numbers.length
-    p numbers[i]
-    i += 1
-  end
-end
+# def numbers_arr(num1, num2, num3, num4, num5)
+#   numbers = [num1, num2, num3, num4, num5]
+#   i = 0
+#   while i < numbers.length
+#     p numbers[i]
+#     i += 1
+#   end
+# end
 
-numbers_arr(1, 2, 3, 4, 5)
-
-# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
-
-# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
-
-# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
-
-# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
-
-# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
-
-# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
-
-# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+# numbers_arr(1, 2, 3, 4, 5)
 
 
 
 
-# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-person_info = {"first_name" => "jeff", "last_name" => "spatafora", "email" => "jeffspatafora@email.com"}
 
-puts person_info["first_name"]
-puts person_info["last_name"]
-puts person_info["email"]
+# # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
-# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+# person_info = {"first_name" => "jeff", "last_name" => "spatafora", "email" => "jeffspatafora@email.com"}
 
-people = [
-  {"first_name" => "jeff", "last_name" => "spatafora"},
-  {"first_name" => "miles", "last_name" => "davis"},
-  {"first_name" => "jeff", "last_name" => "spatafora"}
-]
+# puts person_info["first_name"]
+# puts person_info["last_name"]
+# puts person_info["email"]
 
-p people 
-p people[0]["first_name"]
-p people[0]["last_name"]
+# # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+# people = [
+#   {"first_name" => "jeff", "last_name" => "spatafora"},
+#   {"first_name" => "miles", "last_name" => "davis"},
+#   {"first_name" => "jeff", "last_name" => "spatafora"}
+# ]
 
-menu_items = {coke: 2, fries: 4, pizza: 10}
-p menu_items
-menu_items[:hamburger] = 7
-p menu_items
+# p people 
+# p people[0]["first_name"]
+# p people[0]["last_name"]
 
-# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+# # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+# menu_items = {coke: 2, fries: 4, pizza: 10}
+# p menu_items
+# menu_items[:hamburger] = 7
+# p menu_items
 
-# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
-
-# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
-
-# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-
-# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
 
 
@@ -305,8 +281,19 @@ p menu_items
 
 def arrays_to_hash(arrays)
   hash = {}
-
+  i = 0
+  x = 0
+  while i < arrays.length
+    hash[arrays[i][x]] = arrays[i][1]
+    i += 1
+  end
+  p hash
 end
+
+arrays_to_hash([[1, 3], [8, 9], [2, 16]])
+
+array = [[1, 3], [8, 9], [2, 16]]
+p array[0][1]
 
 #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
 #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
