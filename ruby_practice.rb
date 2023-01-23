@@ -142,59 +142,197 @@
 # Input: [1, 2, 3]
 # Output: ["1", "2", "3"]
 
-def int_to_str(numbers)
-  p numbers.map {|number| number.to_s}
+# def int_to_str(numbers)
+#   p numbers.map {|number| number.to_s}
+# end
+
+# int_to_str([1, 2, 3])
+# int_to_str([0, "0", -1])
+
+# # Write a function that accepts an array of numbers and returns a new array with only the even numbers.
+# # Example:
+# # Input: [2, 4, 5, 1, 8, 9, 7]
+# # Output: [2, 4, 8]
+
+# def only_even(numbers)
+#   p numbers.select {|number| number % 2 == 0}
+# end
+
+# only_even([2, 4, 5, 1, 8, 9, 7])
+# only_even([100, 33, 456, 8, 97, 0])
+
+# # Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
+# # Example:
+# # Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
+# # Output: ["a", "man", "a", "a"]
+
+
+# def only_shorter_than_four(words)
+#   p words.select {|word| word.length < 4}
+# end
+
+# only_shorter_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
+
+# # Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
+# # Example:
+# # Input: [8, 23, 0, 44, 1980, 3]
+# # Output: [8, 0, 3]
+
+# def less_than_ten(numbers)
+#   less_than_ten = []
+#   numbers.each do |number|
+#     if number < 10
+#       less_than_ten << number
+#     end
+#   end
+#   p less_than_ten
+# end
+
+# less_than_ten([8, 23, 0, 44, 1980, 3])
+
+# def less_than_ten(numbers)
+#   numbers_less_than_ten = numbers.select do |number|
+#     number < 10
+#   end
+#   p numbers_less_than_ten
+# end
+
+# less_than_ten([8, 23, 0, 44, 1980, 3])
+
+
+
+
+# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+
+array = ["one", "two", "three"]
+p array
+2.times do 
+  array << "word"
 end
+p array
 
-int_to_str([1, 2, 3])
-int_to_str([0, "0", -1])
+# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
 
-# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
-# Example:
-# Input: [2, 4, 5, 1, 8, 9, 7]
-# Output: [2, 4, 8]
+letters = ["a", "b", "c", "d"]
 
-def only_even(numbers)
-  p numbers.select {|number| number % 2 == 0}
-end
+p letters
 
-only_even([2, 4, 5, 1, 8, 9, 7])
-only_even([100, 33, 456, 8, 97, 0])
+letters[1] = 0
+ 
+p letters
 
-# Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
-# Example:
-# Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
-# Output: ["a", "man", "a", "a"]
+# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-
-def only_shorter_than_four(words)
-  p words.select {|word| word.length < 4}
-end
-
-only_shorter_than_four(["a", "man", "a", "plan", "a", "canal", "panama"])
-
-# Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
-# Example:
-# Input: [8, 23, 0, 44, 1980, 3]
-# Output: [8, 0, 3]
-
-def less_than_ten(numbers)
-  less_than_ten = []
-  numbers.each do |number|
-    if number < 10
-      less_than_ten << number
-    end
+def numbers_arr(num1, num2, num3, num4, num5)
+  numbers = [num1, num2, num3, num4, num5]
+  i = 0
+  while i < numbers.length
+    p numbers[i]
+    i += 1
   end
-  p less_than_ten
 end
 
-less_than_ten([8, 23, 0, 44, 1980, 3])
+numbers_arr(1, 2, 3, 4, 5)
 
-def less_than_ten(numbers)
-  numbers_less_than_ten = numbers.select do |number|
-    number < 10
-  end
-  p numbers_less_than_ten
+# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+
+
+
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+person_info = {"first_name" => "jeff", "last_name" => "spatafora", "email" => "jeffspatafora@email.com"}
+
+puts person_info["first_name"]
+puts person_info["last_name"]
+puts person_info["email"]
+
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+people = [
+  {"first_name" => "jeff", "last_name" => "spatafora"},
+  {"first_name" => "miles", "last_name" => "davis"},
+  {"first_name" => "jeff", "last_name" => "spatafora"}
+]
+
+p people 
+p people[0]["first_name"]
+p people[0]["last_name"]
+
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+menu_items = {coke: 2, fries: 4, pizza: 10}
+p menu_items
+menu_items[:hamburger] = 7
+p menu_items
+
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+
+
+
+
+
+
+
+#  1. Convert an array of arrays into a hash.
+#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+
+def arrays_to_hash(arrays)
+  hash = {}
+
 end
 
-less_than_ten([8, 23, 0, 44, 1980, 3])
+#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+
+#  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
+#     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+
+#  4. Convert a hash into an array of arrays.
+#     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+#  5. Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
+#     For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+
+#  6. Convert an array of strings into a hash with keys for each string in the array and values for the number of times the string appears in the array.
+#     For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
+
+#  7. Convert a hash into a flat array containing all the hash’s keys and values.
+#     For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
+
+#  8. Combine data from a hash with names and prices and an array of hashes with names, colors, and weights to make a new hash.
+#     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
+
+#  9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
+#     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+
+# 10. Given a hash, create a new hash that has the keys and values switched.
+#     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+
+
