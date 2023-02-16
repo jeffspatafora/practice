@@ -468,13 +468,45 @@ to_strings([1, 2, 3])
 # Example:
 # Input: ["big", "little", "good", "bad"]
 # Output: ["little", "good"]
+
+def first_not_b(strings)
+  first_letter_not_b = []
+  i = 0
+  while i < strings.length
+    if strings[i][0].downcase != 'b'
+      first_letter_not_b << strings[i]
+    end
+    i += 1
+  end
+  p first_letter_not_b
+end
+
+first_not_b(["big", "little", "good", "bad"])
+
+strings = ["big", "little", "good", "bad"]
+
+p strings[1][0]
+
+def first_not_b(strings)
+  p strings.select {|string| string[0].downcase != 'b'}
+end
+
+first_not_b(["big", "little", "good", "bad"])
  
 # #10
 # Write a function that accepts an array of numbers and returns an array with only the odd numbers.
 # Example:
 # Input: [2, 4, 5, 1, 8, 9, 7]
 # Output: [5, 1, 9, 7]
+
+def only_odd(numbers)
+  only_odd_numbers = numbers.select do |number|
+    p number % 2 != 0
+  end
+  p only_odd_numbers
+end
  
+only_odd([2, 4, 5, 1, 8, 9, 7])
 # #11
 # Write a function that accepts an array of numbers and returns the sum of all the numbers.
 # Example:
