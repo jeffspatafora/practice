@@ -394,6 +394,21 @@ increased_by_seven([1, 2, 3])
 # Example:
 # Input: ["hello", "goodbye"]
 # Output: [5, 7]
+
+def string_length(strings)
+  p strings.map {|string| string.length}
+end
+
+string_length(["hello", "goodbye"])
+
+def string_length(strings)
+  string_lengths = strings.map do |string|
+    string.length
+  end
+  p string_lengths
+end
+
+string_length(["hello", "goodbye"])
  
 # #3
 # Write a function that accepts an array of numbers and returns an array with each number divided by 2.
@@ -412,7 +427,24 @@ increased_by_seven([1, 2, 3])
 # Example:
 # Input: [1, 2, 3]
 # Output: ["1", "2", "3"]
+
+def to_strings(numbers)
+  numbers_to_strings = []
+  i = 0
+  while i < numbers.length
+    numbers_to_strings << numbers[i].to_s
+    i += 1
+  end
+  p numbers_to_strings
+end
+
+to_strings([1, 2, 3])
+
+def to_strings(numbers)
+  p numbers.map {|number| number.to_s}
+end
  
+to_strings([1, 2, 3])
 # #6
 # Write a function that accepts an array of numbers and returns a new array with only the even numbers.
 # Example:
