@@ -276,56 +276,62 @@
 
 
 
-#  1. Convert an array of arrays into a hash.
-#     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+# #  1. Convert an array of arrays into a hash.
+# #     For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
 
-def arrays_to_hash(arrays)
-  hash = {}
-  i = 0
-  while i < arrays.length
-    hash[arrays[i][0]] = arrays[i][1]
-    i += 1
-  end
-  p hash
-end
+# def arrays_to_hash(arrays)
+#   hash = {}
+#   i = 0
+#   while i < arrays.length
+#     hash[arrays[i][0]] = arrays[i][1]
+#     i += 1
+#   end
+#   p hash
+# end
 
-arrays_to_hash([[1, 3], [8, 9], [2, 16]])
+# arrays_to_hash([[1, 3], [8, 9], [2, 16]])
 
-# array = [[1, 3], [8, 9], [2, 16]]
-# p array[0][1]
+# # array = [[1, 3], [8, 9], [2, 16]]
+# # p array[0][1]
 
-#  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
-#     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+# #  2. Convert an array of hashes into a hash using the :id key from the array's hashes as the keys in the new hash.
+# #     For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}] becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
 
-def hashes_into_hash(array)
-  hash = {}
-  i = 0
-  while i < array.length
-    hash[array[i][:id]] = array[i]
-    i += 1
-  end
-  p hash
-end
+# def hashes_into_hash(array)
+#   hash = {}
+#   i = 0
+#   while i < array.length
+#     hash[array[i][:id]] = array[i]
+#     i += 1
+#   end
+#   p hash
+# end
 
-hashes_into_hash([{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}])
+# hashes_into_hash([{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}])
 
-#  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
-#     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+# #  3. Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
+# #     For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
 
-def string_to_hash(string)
-  hash = {}
-  i = 0
-  while i < string.length
-    hash[string[i]] = string.count(string[i])
-    i += 1
-  end
-  p hash
-end
+# def string_to_hash(string)
+#   hash = {}
+#   i = 0
+#   while i < string.length
+#     hash[string[i]] = string.count(string[i])
+#     i += 1
+#   end
+#   p hash
+# end
 
-string_to_hash("bookkeeper")
+# string_to_hash("bookkeeper")
 
 # string = "bookkeeper"
 # p string.count("b")
+
+
+
+
+
+
 
 #  4. Convert a hash into an array of arrays.
 #     For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
@@ -347,5 +353,124 @@ string_to_hash("bookkeeper")
 
 # 10. Given a hash, create a new hash that has the keys and values switched.
 #     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+
+
+
+# #1
+# Write a function that accepts an array of numbers and returns an array with each number increased by 7.
+# Example:
+# Input: [1, 2, 3]
+# Output: [8, 9, 10]
+
+
+def increased_by_seven(numbers)
+  numbers_increased_by_seven = []
+  i = 0
+  while i < numbers.length
+    numbers_increased_by_seven << numbers[i] + 7
+    i += 1
+  end
+  p numbers_increased_by_seven
+end
+
+increased_by_seven([1, 2, 3])
+
+def increased_by_seven(numbers)
+  numbers_increased_by_seven = numbers.map do |number|
+    number + 7
+  end
+  p numbers_increased_by_seven
+end
+
+increased_by_seven([1, 2, 3])
+
+def increased_by_seven(numbers)
+  p numbers.map {|number| number + 7}
+end
+ 
+increased_by_seven([1, 2, 3])
+# #2
+# Write a function that accepts an array of strings and returns an array with each string's length.
+# Example:
+# Input: ["hello", "goodbye"]
+# Output: [5, 7]
+ 
+# #3
+# Write a function that accepts an array of numbers and returns an array with each number divided by 2.
+# Example:
+# Input: [1, 2, 3]
+# Output: [0.5, 1.0, 1.5]
+ 
+# #4
+# Write a function that accepts an array of strings and returns an array with each string's first letter only.
+# Example:
+# Input: ["hello", "goodbye"]
+# Output: ["h", "g"]
+ 
+# #5
+# Write a function that accepts an array of numbers and returns an array with each number converted into a string.
+# Example:
+# Input: [1, 2, 3]
+# Output: ["1", "2", "3"]
+ 
+# #6
+# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [2, 4, 8]
+ 
+# #7
+# Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
+# Example:
+# Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
+# Output: ["a", "man", "a", "a"]
+ 
+# #8
+# Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
+# Example:
+# Input: [8, 23, 0, 44, 1980, 3]
+# Output: [8, 0, 3]
+ 
+# #9
+# Write a function that accepts an array of strings and returns an array with only the strings that don't start with the letter "b".
+# Example:
+# Input: ["big", "little", "good", "bad"]
+# Output: ["little", "good"]
+ 
+# #10
+# Write a function that accepts an array of numbers and returns an array with only the odd numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [5, 1, 9, 7]
+ 
+# #11
+# Write a function that accepts an array of numbers and returns the sum of all the numbers.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 26
+ 
+# #12
+# Write a function that accepts an array of numbers and returns the smallest number.
+# Example:
+# Input: [5, 3, 8, 10]
+# Output: 3
+ 
+# #13
+# Write a function that accepts an array of strings and returns the total length of all the strings.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: 29
+ 
+# #14
+# Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: "volleyball-basketball-badminton"
+ 
+# #15
+# Write a function that accepts an array of numbers and returns the greatest number.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 10
 
 
