@@ -363,52 +363,52 @@
 # Output: [8, 9, 10]
 
 
-def increased_by_seven(numbers)
-  numbers_increased_by_seven = []
-  i = 0
-  while i < numbers.length
-    numbers_increased_by_seven << numbers[i] + 7
-    i += 1
-  end
-  p numbers_increased_by_seven
-end
+# def increased_by_seven(numbers)
+#   numbers_increased_by_seven = []
+#   i = 0
+#   while i < numbers.length
+#     numbers_increased_by_seven << numbers[i] + 7
+#     i += 1
+#   end
+#   p numbers_increased_by_seven
+# end
 
-increased_by_seven([1, 2, 3])
+# increased_by_seven([1, 2, 3])
 
-def increased_by_seven(numbers)
-  numbers_increased_by_seven = numbers.map do |number|
-    number + 7
-  end
-  p numbers_increased_by_seven
-end
+# def increased_by_seven(numbers)
+#   numbers_increased_by_seven = numbers.map do |number|
+#     number + 7
+#   end
+#   p numbers_increased_by_seven
+# end
 
-increased_by_seven([1, 2, 3])
+# increased_by_seven([1, 2, 3])
 
-def increased_by_seven(numbers)
-  p numbers.map {|number| number + 7}
-end
+# def increased_by_seven(numbers)
+#   p numbers.map {|number| number + 7}
+# end
  
-increased_by_seven([1, 2, 3])
+# increased_by_seven([1, 2, 3])
 # #2
 # Write a function that accepts an array of strings and returns an array with each string's length.
 # Example:
 # Input: ["hello", "goodbye"]
 # Output: [5, 7]
 
-def string_length(strings)
-  p strings.map {|string| string.length}
-end
+# def string_length(strings)
+#   p strings.map {|string| string.length}
+# end
 
-string_length(["hello", "goodbye"])
+# string_length(["hello", "goodbye"])
 
-def string_length(strings)
-  string_lengths = strings.map do |string|
-    string.length
-  end
-  p string_lengths
-end
+# def string_length(strings)
+#   string_lengths = strings.map do |string|
+#     string.length
+#   end
+#   p string_lengths
+# end
 
-string_length(["hello", "goodbye"])
+# string_length(["hello", "goodbye"])
  
 # #3
 # Write a function that accepts an array of numbers and returns an array with each number divided by 2.
@@ -428,23 +428,23 @@ string_length(["hello", "goodbye"])
 # Input: [1, 2, 3]
 # Output: ["1", "2", "3"]
 
-def to_strings(numbers)
-  numbers_to_strings = []
-  i = 0
-  while i < numbers.length
-    numbers_to_strings << numbers[i].to_s
-    i += 1
-  end
-  p numbers_to_strings
-end
+# def to_strings(numbers)
+#   numbers_to_strings = []
+#   i = 0
+#   while i < numbers.length
+#     numbers_to_strings << numbers[i].to_s
+#     i += 1
+#   end
+#   p numbers_to_strings
+# end
 
-to_strings([1, 2, 3])
+# to_strings([1, 2, 3])
 
-def to_strings(numbers)
-  p numbers.map {|number| number.to_s}
-end
+# def to_strings(numbers)
+#   p numbers.map {|number| number.to_s}
+# end
  
-to_strings([1, 2, 3])
+# to_strings([1, 2, 3])
 # #6
 # Write a function that accepts an array of numbers and returns a new array with only the even numbers.
 # Example:
@@ -469,29 +469,29 @@ to_strings([1, 2, 3])
 # Input: ["big", "little", "good", "bad"]
 # Output: ["little", "good"]
 
-def first_not_b(strings)
-  first_letter_not_b = []
-  i = 0
-  while i < strings.length
-    if strings[i][0].downcase != 'b'
-      first_letter_not_b << strings[i]
-    end
-    i += 1
-  end
-  p first_letter_not_b
-end
+# def first_not_b(strings)
+#   first_letter_not_b = []
+#   i = 0
+#   while i < strings.length
+#     if strings[i][0].downcase != 'b'
+#       first_letter_not_b << strings[i]
+#     end
+#     i += 1
+#   end
+#   p first_letter_not_b
+# end
 
-first_not_b(["big", "little", "good", "bad"])
+# first_not_b(["big", "little", "good", "bad"])
 
-strings = ["big", "little", "good", "bad"]
+# strings = ["big", "little", "good", "bad"]
 
-p strings[1][0]
+# p strings[1][0]
 
-def first_not_b(strings)
-  p strings.select {|string| string[0].downcase != 'b'}
-end
+# def first_not_b(strings)
+#   p strings.select {|string| string[0].downcase != 'b'}
+# end
 
-first_not_b(["big", "little", "good", "bad"])
+# first_not_b(["big", "little", "good", "bad"])
  
 # #10
 # Write a function that accepts an array of numbers and returns an array with only the odd numbers.
@@ -499,14 +499,14 @@ first_not_b(["big", "little", "good", "bad"])
 # Input: [2, 4, 5, 1, 8, 9, 7]
 # Output: [5, 1, 9, 7]
 
-def only_odd(numbers)
-  only_odd_numbers = numbers.select do |number|
-    p number % 2 != 0
-  end
-  p only_odd_numbers
-end
+# def only_odd(numbers)
+#   only_odd_numbers = numbers.select do |number|
+#     p number % 2 != 0
+#   end
+#   p only_odd_numbers
+# end
  
-only_odd([2, 4, 5, 1, 8, 9, 7])
+# only_odd([2, 4, 5, 1, 8, 9, 7])
 # #11
 # Write a function that accepts an array of numbers and returns the sum of all the numbers.
 # Example:
@@ -536,5 +536,46 @@ only_odd([2, 4, 5, 1, 8, 9, 7])
 # Example:
 # Input: [5, 10, 8, 3]
 # Output: 10
+
+def greatest_number(numbers)
+  current_greatest_number = numbers[0]
+  i = 0
+  while i < numbers.length
+    if numbers[i] > current_greatest_number
+      current_greatest_number = numbers[i]
+      i += 1
+    else
+      i += 1
+    end
+  end
+  p current_greatest_number
+end
+
+greatest_number([5, 10, 22, 3, 11, 44, 5, 0, -1])
+
+
+
+
+
+
+# 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+# 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+
+# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
 
