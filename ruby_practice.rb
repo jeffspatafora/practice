@@ -583,110 +583,211 @@
 
 # 1. Use a variable to store a number, then write a condition that prints 0 if the number is equal to 10, and prints -1 otherwise.
 
-num = 9
+# num = 9
 
-if num == 10
-  p 0
-else
-  p -1
+# if num == 10
+#   p 0
+# else
+#   p -1
+# end
+
+# # 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+
+# num = 7
+
+# if num < 10
+#   p -1
+# elsif num > 10
+#   p 1
+# elsif num == 10
+#   p 0
+# end 
+
+# # 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+
+# num_1 = 2
+# num_2 = 11
+
+# if num_1 < 10 && num_2 < 10
+#   p 1
+# else
+#   p 0
+# end
+
+
+# # 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+
+# num = 10
+
+# if num > 9000
+#   p 1
+# else
+#   p -1
+# end
+
+# # 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
+
+# num = 21
+
+# if num < 20
+#   p 19
+# elsif num < 30
+#   p 20
+# else
+#   p -1
+# end
+
+# # 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
+
+# # 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
+
+# # 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
+
+# # 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
+
+# # 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+
+
+
+
+
+# # 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+
+
+# first_name = 'Jib'
+# last_name = 'Son'
+
+# p first_name + ' ' + last_name
+
+# # 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+
+# first_name = 'petey'
+# last_name = 'catafora'
+
+# p "#{first_name} #{last_name}"
+
+# # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+# p "please enter a word"
+
+# word = gets.chomp
+
+# if word == 'marco'
+#   p 'polo'
+# end
+
+# # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+# # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+
+# # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+# # 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+# # 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+# # 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+# # 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+
+
+# # 1. Create an array to store 3 words. Then add two more words to the array and print the array on one line.
+
+# words = ['hello', 'world', 'today']
+
+# p words
+
+# words[3] = 'tomorrow'
+
+# words << 'tonight'
+
+
+# p words
+
+# # 2. Create an array to store 4 letters. Then change the second letter to a number and print the array on one line.
+
+# letters = ['a', 'b', 'c', 'd']
+
+# p letters
+
+# letters[1] = 22
+
+# p letters
+
+# 3. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
+
+letters = [8, 2, 5, 10, 34]
+
+i = 0
+
+while i < letters.length
+  p letters[i]
+  i += 1
 end
 
-# 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
+# 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
-num = 7
+numbers = [55]
 
-if num < 10
-  p -1
-elsif num > 10
-  p 1
-elsif num == 10
-  p 0
-end 
+p numbers
 
-# 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
+numbers << 2
+numbers << 22
+numbers << 57
 
-num_1 = 2
-num_2 = 11
+p numbers
 
-if num_1 < 10 && num_2 < 10
-  p 1
-else
-  p 0
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+strings = ['hello', 'world', 'today']
+
+p strings
+
+strings[2] = strings[2].upcase
+
+p strings
+
+# 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+names = ['jib', 'son', 'catafora']
+
+i = 0
+while i < names.length
+  p names[i]
+  i += 1
 end
 
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
 
-# 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+# 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
-num = 10
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
-if num > 9000
-  p 1
-else
-  p -1
-end
-
-# 5. Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
-
-num = 21
-
-if num < 20
-  p 19
-elsif num < 30
-  p 20
-else
-  p -1
-end
-
-# 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
-
-# 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
-
-# 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
-
-# 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
-
-# 10. Use a variable to store a number, then write a condition that prints 5 if the number is greater than 80, prints 4 if the number is greater than 60, prints 3 if the number is greater than 40, prints 2 if the number is greater than 20, and prints 1 otherwise (only one print statement should occur).
+# 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
 
 
 
 
-
-# 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
-
-
-first_name = 'Jib'
-last_name = 'Son'
-
-p first_name + ' ' + last_name
-
-# 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
 
-first_name = 'petey'
-last_name = 'catafora'
 
-p "#{first_name} #{last_name}"
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
-p "please enter a word"
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
-word = gets.chomp
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-if word == 'marco'
-  p 'polo'
-end
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-# 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
-# 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
-# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
-# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
-
-# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
-
-# 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
-
-# 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
