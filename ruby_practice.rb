@@ -856,6 +856,11 @@ subtraction(4, 7)
 
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
+def times_self(number1)
+  p number1 * number1
+end
+
+times_self(9)
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
@@ -864,6 +869,21 @@ subtraction(4, 7)
 
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
+def repeat_five_times(string)
+  5.times do
+    p string
+  end
+end
+
+repeat_five_times("hello")
+
 # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+def times_10_plus_30(number1)
+  return number1 * 10 + 30
+end
+
+p times_10_plus_30(10)
+p times_10_plus_30(6)
