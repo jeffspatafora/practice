@@ -85,11 +85,23 @@ upcasedmap(["hello", "goodbye"])
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
+def ages_while(people)
+  ages = []
+  i = 0
+  while i < people.length
+    ages << people[i][:age] * 2
+    i += 1
+  end
+  p ages
+end
+
+ages_while([{name: "Alice", age: 27}, {name: "Blane", age: 16}])
+
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
 
-def tostringmap(numbers)
-  p numbers.map { |number| number.to_s }
-end
+# def tostringmap(numbers)
+#   p numbers.map { |number| number.to_s }
+# end
 
-tostringmap([1, 2, 3])
+# tostringmap([1, 2, 3])
