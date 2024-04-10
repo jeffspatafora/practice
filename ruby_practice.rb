@@ -36,6 +36,34 @@ p time3map([1, 2, 3])
 #  2. Start with an array of strings and create a new array with each string upcased.
 #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
+
+def upcased(strings)
+  upcased_strings = []
+  i = 0
+  while i < strings.length
+    upcased_strings << strings[i].upcase
+    i += 1
+  end
+  p upcased_strings
+end
+
+upcased(["hello", "goodbye"])
+
+def upcasedeach(strings)
+  upcased_strings = []
+  strings.each do |string|
+    upcased_strings << string.upcase
+  end
+  p upcased_strings
+end
+
+upcasedeach(["hello", "goodbye"])
+
+def upcasedmap(strings)
+  p strings.map {|string| string.upcase}
+end
+
+upcasedmap(["hello", "goodbye"])
 #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
@@ -59,3 +87,9 @@ p time3map([1, 2, 3])
 
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+def tostringmap(numbers)
+  p numbers.map { |number| number.to_s }
+end
+
+tostringmap([1, 2, 3])
