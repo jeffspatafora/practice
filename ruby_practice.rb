@@ -110,19 +110,26 @@ ages_while([{name: "Alice", age: 27}, {name: "Blane", age: 16}])
 #  1. Start with an array of numbers and create a new array with only the numbers less than 20.
 #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
-def less_than_20(numbers)
-  numbers_less_than_20 = []
-  i = 0
-  while i < numbers.length
-    if numbers[i] < 20
-      numbers_less_than_20 << numbers[i]
-    end
-    i += 1
-  end
-  p numbers_less_than_20
+# def less_than_20(numbers)
+#   numbers_less_than_20 = []
+#   i = 0
+#   while i < numbers.length
+#     if numbers[i] < 20
+#       numbers_less_than_20 << numbers[i]
+#     end
+#     i += 1
+#   end
+#   p numbers_less_than_20
+# end
+
+# less_than_20([2, 32, 80, 18, 12, 3])
+
+
+def less_than_20_select(numbers)
+  p numbers_less_than_20 = numbers.select {|number| number < 20}
 end
 
-less_than_20([2, 32, 80, 18, 12, 3])
+less_than_20_select([2, 32, 80, 18, 12, 3])
 
 
 
@@ -150,5 +157,18 @@ less_than_20([2, 32, 80, 18, 12, 3])
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
+def items_select(items)
+  p items_less_than_10 = items.select {|item| item[:price] < 10}
+end
+
+
+
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+
+def only_odd_select(numbers)
+  p only_odd_numbers = numbers.select {|number| number % 2 == 1}
+end
+
+only_odd_select([2, 4, 5, 1, 8, 9, 7])
