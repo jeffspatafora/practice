@@ -6,3 +6,6 @@ strings = ["hello", "goodbye"]
 p strings
 
 p strings[0].upcase
+
+
+p strings[1].upcase
