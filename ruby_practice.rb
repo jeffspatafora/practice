@@ -124,3 +124,86 @@ p letters
 
 
 # SOLUTIONS: https://gist.github.com/peterxjang/7095a2b19e1da2cc18d4a0dcd66cb8f1
+# 
+#
+#
+#
+## 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+
+first_name = 'Jib'
+last_name = 'Davis'
+
+p first_name + ' ' + last_name
+
+
+# 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+
+first_name = "Tom"
+last_name = 'Tommys'
+
+p "#{first_name} #{last_name}"
+
+# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+# 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+
+# 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+
+# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+# 9. Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+# 
+#
+
+
+
+p "Enter a Password"
+
+password = gets.chomp
+
+p password
+p password.downcase
+
+
+if password.downcase == "joshua"
+  p "shall we play a game?"
+else
+  p "Access Denied"
+end
+
+# 10. Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+
+# SOLUTIONS: https://gist.github.com/peterxjang/79ba5acc912a86cce2a18c2f14b1c712
+
+
+
+
+
+# 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
+
+# 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
+
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+
+# 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
+
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
+
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+
+# 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+
+# 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
+
+# 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
+
+
+# SOLUTIONS: https://gist.github.com/peterxjang/1539a3ad79728ba4fb68dd8d07279c29
+
