@@ -114,9 +114,37 @@ p letters
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+names = ["jibson", "petey", "joker"]
+
+i = 0
+while i < names.length
+  p names[i]
+  p i
+  i += 1
+end
+
+
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+# 
+
+strings = ["string 1", "string 2"]
+p strings
+
+strings << "string 3"
+p strings
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
+# 
+
+numbers = [1, 2, 3, 4, 5]
+
+p numbers
+p numbers [0]
+
+numbers[0] = numbersi[0] * 10
+
+p numbers
+
 
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
@@ -144,6 +172,8 @@ last_name = 'Tommys'
 p "#{first_name} #{last_name}"
 
 # 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+# 
+#
 
 # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
