@@ -186,8 +186,25 @@ p "the colors are " + color_1 + ", " + color_2 + ", and " + color_3 + "."
 
 
 # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+# 
+
+color_1 = "yellow"
+color_2 = "green"
+color_3 = "purple"
+
+p "the colors are #{color_1}, #{color_2}, and #{color_3}"
 
 # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+# 
+
+p "please enter a name:"
+name = gets.chomp
+
+if name.downcase == "santa"
+  p "you are santa"
+else
+  p "you are not santa"
+end
 
 # 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
