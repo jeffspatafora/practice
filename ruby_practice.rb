@@ -141,7 +141,7 @@ numbers = [1, 2, 3, 4, 5]
 p numbers
 p numbers [0]
 
-numbers[0] = numbersi[0] * 10
+numbers[0] = numbers[0] * 10
 
 p numbers
 
@@ -176,6 +176,14 @@ p "#{first_name} #{last_name}"
 #
 
 # 4. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
+# 
+
+color_1 = "red"
+color_2 = "blue"
+color_3 = "gray"
+
+p "the colors are " + color_1 + ", " + color_2 + ", and " + color_3 + "."
+
 
 # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
