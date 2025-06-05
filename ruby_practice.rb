@@ -297,6 +297,16 @@ end
 
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
+p "please enter the first word:"
+
+word1 = gets.chomp
+
+p "please enter the second word:"
+
+word2 = gets.chomp
+
+p "the words are #{word1.upcase} and #{word2.upcase}"
+
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
