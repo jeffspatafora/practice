@@ -395,9 +395,30 @@ end
 
 # 7. Write a while loop that prints the numbers 50 to 70.
 
+number = 50
+
+while number < 71
+  p number
+  number += 1
+end
+
 # 8. Write a while loop that prints the phrase "Around the world" 144 times.
 
 # 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
+
+p "enter a word more than five letters:"
+
+word = gets.chomp
+
+# p word
+
+while word.length < 5
+  # p word
+  if word.length < 5
+    p "the word is not more 5 letters. Please enter a word that is more than 5 letter:"
+    word = gets.chomp
+  end
+end
 
 # 10. Write a while loop that prints the even numbers from 2 to 40.
 
