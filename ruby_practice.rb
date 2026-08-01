@@ -24,6 +24,8 @@
 #   p (-1)
 # end
 
+p "hello"
+
 # # 2. Use a variable to store a number, then write a condition that prints -1 if the number is less than 10, prints 1 if the number is greater than 10, and prints 0 if the number is equal to 10.
 
 
@@ -252,6 +254,14 @@
 # # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
 # # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
+# 
+#
+ 
+p "enter a word:"
+word = gets.chomp
+
+p word
+p word.length
 
 # # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
